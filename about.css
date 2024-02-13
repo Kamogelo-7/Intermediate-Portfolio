@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  background-color: #f2ff00;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+nav {
+  background-color: #000000;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  box-shadow: #f2ff00 1px 3px;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+li,
+a {
+  color: rgb(237, 237, 237);
+  list-style-type: none;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 20px;
+}
+b {
+  text-transform: uppercase;
+  font-style: italic;
+  color: #f2ff00;
+  padding-left: 25px;
+  float: inline-start;
+  font-size: xx-large;
+  padding-top: 10px;
+}
+
+.sub {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+}
+label {
+  background-color: rgb(0, 0, 0);
+  color: #f2ff00;
+  padding: 5px;
+  transition: 0.4s;
+}
+label:hover {
+  color: rgb(255, 255, 255);
+}
+.clo {
+  color: rgb(247, 247, 0);
+  font-weight: bold;
+  font-size: larger;
+  font-style: italic;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: #000000;
+  padding: 2px;
+}
+form {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  align-items: center;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+  background-color: black;
+  position: fixed;
+}
+/* Media queries for responsive design */
+@media screen and (max-width: 1156px) and (min-width: 800px) {
+  nav {
+    width: 100%;
+    background-color: #000000;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  a:hover {
+    background-color: rgb(228, 249, 0);
+    padding: 20px;
+    color: rgb(0, 0, 0);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  nav {
+    background-color: #000000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+  }
+  ul,
+  li {
+    margin: 0;
+    padding-right: 2em;
+    row-gap: 5px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+  }
+  b {
+    text-transform: uppercase;
+    font-style: italic;
+    color: #f2ff00;
+    padding-left: 25px;
+    font-size: x-large;
+    padding-top: 3px;
+  }
+  a:hover {
+    color: rgb(255, 234, 0);
+  }
+  a {
+    color: rgb(237, 237, 237);
+    list-style-type: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 15px;
+  }
+}
