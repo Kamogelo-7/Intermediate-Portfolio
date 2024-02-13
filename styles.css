@@ -18,10 +18,12 @@ ul {
   margin: 0;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   padding: 7px;
-  width: 100%;
-  color: #444444;
+  color: #ff2600;
+  text-shadow: #00fbff 1px 3px;
   background-color: yellow;
   text-transform: capitalize;
+  display: flex;
+  justify-content: center;
   font-size: x-large;
 }
 li,
@@ -293,6 +295,22 @@ button:after {
     align-items: center;
     flex-direction: column;
     gap: 1em;
+    width: 100%;
     padding-bottom: 20px;
   }
+  .wo {
+    margin: 0;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    padding: 7px;
+    color: #ff2600;
+    text-shadow: #00fbff 1px 3px;
+    background-color: yellow;
+    text-transform: capitalize;
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    font-size: x-large;
+  }
 }
+
+
