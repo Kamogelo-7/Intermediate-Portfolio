@@ -1,13 +1,13 @@
 body {
   margin: 0;
-  background-color: rgb(226, 226, 226);
+  background-image: linear-gradient(to right, #ff9966, #ff5e62);
+
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 nav {
   background-color: #000000;
   padding-top: 5px;
   padding-bottom: 5px;
-  box-shadow: #f2ff00 1px 3px;
 }
 p {
   margin: 0;
@@ -212,7 +212,7 @@ button:after {
 }
 
 /* Media queries for responsive design */
-@media screen and (max-width: 1156px) and (min-width: 810px) {
+@media screen and (max-width: 1156px) and (max-width: 280px) {
   nav {
     width: 100%;
     background-color: #000000;
@@ -252,24 +252,23 @@ button:after {
     width: 100%;
   }
 
-  ul,
-  li {
-    margin: 0;
-    padding-right: 2em;
-    row-gap: 5px;
+  ul {
+    gap: 15px;
     display: flex;
     justify-content: flex-end;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    padding-right: 2em;
+    margin: 5px;
   }
   b {
     text-transform: uppercase;
     font-style: italic;
     color: #f2ff00;
     padding-left: 25px;
-    font-size: x-large;
+    font-size: medium;
     min-width: fit-content;
-    padding-top: 3px;
+    top: 10px;
+    position: fixed;
   }
   a:hover {
     color: rgb(255, 234, 0);
@@ -311,13 +310,12 @@ button:after {
   footer {
     display: flex;
     background-color: #000000;
-    padding-top: 20px;
+    padding-top: 30px;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    padding-bottom: 30px;
+    flex-direction: row;
     gap: 1em;
     width: 100%;
-    padding-bottom: 20px;
   }
   .wo {
     margin: 0;
